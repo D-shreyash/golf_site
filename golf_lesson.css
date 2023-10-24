@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat",sans-serif;
+    color: #fff;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* perspective: 800px; */
+}
+
+#main_div{
+    background: #000;
+}
+
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+#cursor_blur{
+    height: 400px;
+    width: 400px;
+    background-color: #96c11e2b;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
+}
+
+#nav{
+    height: 145px;
+    width: 97.8VW;
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    gap: 50px;
+    position: fixed;
+    justify-content: flex-start;
+    background: #000;
+    z-index: 999;
+}
+
+#nav img{
+    height: 75px;
+}
+
+.nav-menu{
+    display: flex;
+    text-transform: capitalize;
+    font-weight: 100;
+    gap: 50px;
+}
+
+#open-nav-menu{
+    display: none;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#nav h4 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+#toggle-nav-menu{
+    display: none;
+}
+
+
+
+/* midsection */
+
+.mid_sec{
+    padding-top: 25vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mid_sec_info{
+    width: 50%;
+}
+
+.mid_sec_info h4 {
+    color: #95c11e;
+    font-size: 2vw;
+    font-weight: 900;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.mid_sec_info h1{
+    font-size: 4vw;
+    font-weight: 900;
+    padding-bottom: 1.5rem;
+}
+
+.mid_sec_info p{
+    font-size: 1.5vw;
+    line-height: 30px;
+    font-family: "gilroy",sans-serif;
+}
+
+.mid_sec_img{
+    /* width: 50%; */
+    /* height: 50%; */
+    overflow: hidden;
+}
+
+.mid_sec_img img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 5%;
+}
+
+
+/* golf section  */
+.golf_les_sec{
+    width: 100vw;
+    height: 100vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.golf_les_sec_title{
+    text-align: center ;
+}
+
+.golf_les_sec_title h1{
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    font-weight: 900;
+}
+
+.golf_les_sec_subtitle{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.golf_les_sec_subtitle h4{
+    font-size: 1.5vw;
+    font-weight: 900;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+.golf_les_sec_info{
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    border-radius: 20px;
+    background-color: #96c11e;
+}
+
+.golf_les_sec_info img{
+    border-radius: 20px;
+    max-width: 46;
+    max-height: 90%;
+    margin-left: 1.5%;
+}
+
+.golf_les_sec_info_inner_div{
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    z-index: 120;
+}
+
+.golf_les_sec_info_inner_div h4{
+    margin-bottom: 1.5rem;
+    font-size: 2.5vw;
+    font-weight: 900;
+}
+
+.golf_les_sec_info_inner_div p{
+    line-height: 25px;
+    margin-bottom: 1.5rem;
+}
+
+.golf_les_sec_info_inner_div button{
+     background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    z-index: 100;
+}
+
+.golf_les_sec_info_inner_div button:hover {
+    background-color: #6e8d19;
+    color: #000;
+    font-weight: 600;
+}
+
+.golf_les_sec_info_inner_div button a{
+    text-decoration: none;
+}
+
+
+
+#page4 {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+}
+.elem {
+    height: 70%;
+    width: 26%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.elem h2 {
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    display: flex;
+    color: #000;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+    font-size: 2vw;
+    position: absolute;
+    z-index: 10;
+  }
+
+.elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+    scale: 1.1;
+}
+.elem:hover h2 {
+    color: #fff;
+    background-color: transparent;
+}
+
+.elem:hover img {
+    scale: 1;
+}
+#page4 h1 {
+    font-size: 5vw;
+    position: absolute;
+    top: -15%;
+    font-weight: 900;
+    font-family: 'gilroy',sans-serif;
+    color: #000;
+    -webkit-text-stroke: 1px #fff;
+}
+
+
+
+
+#footer {
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6.5vw;
+    padding: 0 100px;
+  }
+#footer > img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+  }
+  #f1 img {
+    height: 100px;
+  }
+  #f1,
+  #f2,
+  #f3,
+  #f4 {
+    width: fit-content;
+    position: relative;
+    z-index: 99;
+    /* background-color: red; */
+  }
+  #f2 h3 {
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 8px;
+  }
+  
+  #f3 h3 {
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  #f4 h4 {
+    font-size: 1vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+
